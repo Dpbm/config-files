@@ -17,6 +17,7 @@ copy_file(){
 }
 
 copy_file "$HOME/.zshrc"
+copy_file "$HOME/.bashrc"
 copy_file "$HOME/.functions/"
 copy_file "$HOME/.aliases.sh"
 copy_file "$HOME/.vars.sh"

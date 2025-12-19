@@ -4,6 +4,8 @@ remove_quotation_marks(){
   echo $1 | sed 's/\"//g'
 }
 
+export LANG=en_US.UTF-8
+
 export XDG_DATA_DIRS="/var/lib/flatpak/exports/share:$XDG_DATA_DIRS"
 export XDG_DATA_DIRS="$HOME/.local/share/flatpak/exports/share:$XDG_DATA_DIRS"
 export XDG_CONFIG_HOME="$HOME/.config"
@@ -12,6 +14,8 @@ export JAVA_HOME="/usr/lib/jvm/java-21-openjdk-amd64"
 export JDK_HOME="$JAVA_HOME"
 export STUDIO_JDK="$JAVA_HOME"
 export GRADLE_USER_HOME="$HOME"
+
+export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
 export PATH="/usr/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
@@ -26,6 +30,8 @@ export PATH="$HOME/ghidra:$PATH"
 export PATH="$HOME/flutter/bin:$PATH"
 export PATH="$HOME/Android/Sdk/cmdline-tools/latest/bin:$PATH"
 export PATH="$HOME/zotero:$PATH"
+export PATH="$HOME/.pixi/bin:$PATH"
+export PAHT="$HOME/genymotion:$PATH"
 
 # https://stackoverflow.com/questions/57700860/error-protoc-gen-go-program-not-found-or-is-not-executable
 # https://protobuf.dev/reference/go/go-generated/
@@ -39,3 +45,5 @@ export HF_TOKEN="$( remove_quotation_marks $(cat $HOME/.huggingface/token.json |
 export IBM_TOKEN="$( remove_quotation_marks $(cat $HOME/.ibm-qiskit/apikey.json | jq .apikey) )"
 
 export SDKMAN_DIR="$HOME/.sdkman"
+
+export NVM_DIR="$HOME/.config/nvm"
