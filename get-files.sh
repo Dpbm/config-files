@@ -16,10 +16,14 @@ copy_file(){
   fi
 }
 
+copy_file "$HOME/.xinitrc"
+copy_file "$HOME/.zprofile"
 copy_file "$HOME/.zshrc"
 copy_file "$HOME/.bashrc"
 copy_file "$HOME/.functions/"
 copy_file "$HOME/.aliases.sh"
 copy_file "$HOME/.vars.sh"
+copy_file "$HOME/.config/i3/"
+copy_file "$HOME/.config/i3blocks/"
 
 

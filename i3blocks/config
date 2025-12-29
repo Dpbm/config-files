@@ -1,0 +1,30 @@
+[volume]
+full_text=Current volume
+short_text=Volume
+command=echo Volume $(bash -c "source $HOME/.functions/pulse.sh && get_volume")%
+interval=1
+
+[lang-key]
+full_text=Current keyboard layout
+short_text=Keyboard layout
+command=echo $(bash -c "source $HOME/.functions/keys.sh && get_layout")
+interval=1
+
+[ip-eth]
+full_text=Current local IP Ethernet
+short_text=Local IP eth
+command=echo eth IP: $(bash -c "source $HOME/.functions/con.sh && get_ip enp3s0")
+interval=10
+
+[ip-wlan]
+full_text=Current local IP Wlan
+short_text=Local IP wlan
+command=echo wln IP: $(bash -c "source $HOME/.functions/con.sh && get_ip wlx503eaa27a317")
+interval=10
+
+[time]
+full_text=Current Time from location
+short_text=Time
+command=date +"%d/%m/%Y %H:%M"
+interval=1
+
