@@ -194,6 +194,8 @@ mode "apps" {
 	bindsym v exec virtualbox
 	bindsym k exec bash -c "flatpak run org.keepassxc.KeePassXC"
 	bindsym o exec okular
+	bindsym x exec xournalpp
+	bindsym t exec texstudio
 
         bindsym Return mode "default"
         bindsym Escape mode "default"

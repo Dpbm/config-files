@@ -8,6 +8,7 @@ export LANG=en_US.UTF-8
 
 export XDG_DATA_DIRS="/var/lib/flatpak/exports/share:$XDG_DATA_DIRS"
 export XDG_DATA_DIRS="$HOME/.local/share/flatpak/exports/share:$XDG_DATA_DIRS"
+export XDG_DATA_DIRS="$XDG_DATA_DIRS:/usr/share:/usr/local/share:~/.local/share"
 export XDG_CONFIG_HOME="$HOME/.config"
 
 export JAVA_HOME="/usr/lib/jvm/java-21-openjdk-amd64"
