@@ -1,7 +1,7 @@
 source "$HOME/.vars.sh"
 source "$HOME/.aliases.sh"
 
-local BASE_FUNCTIONS_PATH="$HOME/.functions"
+BASE_FUNCTIONS_PATH="$HOME/.functions"
 for function_file in $BASE_FUNCTIONS_PATH/*.sh; do
     chmod +x "$function_file"
     source "$function_file"

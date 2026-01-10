@@ -11,7 +11,8 @@ export JAVA_HOME="/usr/lib/jvm/java-21-openjdk-amd64"
 export JDK_HOME="$JAVA_HOME"
 export STUDIO_JDK="$JAVA_HOME"
 export GRADLE_USER_HOME="$HOME"
-export GOBIN="$HOME/go/bin"
+export GOPATH="$HOME/go"
+export GOBIN="$GOPATH/bin"
 
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
