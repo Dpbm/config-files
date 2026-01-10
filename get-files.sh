@@ -25,5 +25,6 @@ copy_file "$HOME/.aliases.sh"
 copy_file "$HOME/.vars.sh"
 copy_file "$HOME/.config/i3/"
 copy_file "$HOME/.config/i3blocks/"
+copy_file "$HOME/.config/dunst"
 
 

@@ -13,7 +13,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:monospace 8
+font pango:FiraCodeNerdFontMono 8
 
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
@@ -23,6 +23,7 @@ font pango:monospace 8
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
+exec --no-startup-id dunst &
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
@@ -227,3 +228,6 @@ bindsym $mod+ctrl+space exec bash -c "source $HOME/.functions/keys.sh && switch_
 bar {
         status_command i3blocks
 }
+
+for_window [class="Dunst"] floating enable
+
