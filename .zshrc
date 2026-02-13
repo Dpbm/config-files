@@ -1,5 +1,6 @@
 source "$HOME/.vars.sh"
 source "$HOME/.aliases.sh"
+source "$HOME/.secrets.sh"
 
 BASE_FUNCTIONS_PATH="$HOME/.functions"
 for function_file in $BASE_FUNCTIONS_PATH/*.sh; do
@@ -22,3 +23,5 @@ esac
 # pnpm end
 #
 eval "$(starship init zsh)"
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"

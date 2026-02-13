@@ -40,6 +40,17 @@ scaffold_post(){
 	if [ ! -d "$POST_SLUG_PATH" ]; then
 		mkdir -p "$POST_SLUG_PATH"
 	fi
+	
+	local MAIN_MD_FILE="$POST_SLUG_PATH/index.md"
+	local DATE=$(date -d 'now' +%Y-%m-%d)
+	touch $MAIN_MD_FILE
+	cat <<EOF > $MAIN_MD_FILE
+---
+title: $TITLE
+date: $DATE
+tags: ["computer science"]
+draft: true
+---
+EOF
 
-	touch "$POST_SLUG_PATH/index.md"
 }

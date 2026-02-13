@@ -16,3 +16,8 @@ open_luks(){
 
 	sudo mount /dev/mapper/$MAP_TO $TARGET_FOLDER
 }
+
+open_hd(){
+	local HD=$(lsblk | grep 931.5G | tail -n 1 | awk '{printf $1}' | grep -Eo 'sd[a-z][1-9]')
+	open_luks "$HD"
+}

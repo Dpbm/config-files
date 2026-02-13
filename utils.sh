@@ -35,4 +35,4 @@ copy_file_to(){
 
 
 from_home=(".xinitrc" ".zprofile" ".zshrc" ".bashrc" ".functions/" ".aliases.sh" ".vars.sh")
-from_home_config=("i3/" "i3blocks/" "dunst" "fontconfig")
+from_home_config=("i3/" "i3blocks/" "dunst" "fontconfig" "nvim/init.lua")
