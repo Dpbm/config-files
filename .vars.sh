@@ -14,6 +14,7 @@ export GRADLE_USER_HOME="$HOME"
 export GOPATH="$HOME/go"
 export GOBIN="$GOPATH/bin"
 export NVIDIA_CONTAINER_TOOLKIT_VERSION=1.18.2-1
+export ANDROID_HOME="$HOME/Android/Sdk"
 
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
@@ -22,6 +23,7 @@ export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/flutter/bin:$PATH"
 export PATH="$HOME/Android/Sdk/cmdline-tools/latest/bin:$PATH"
 export PATH="$HOME/android-studio/bin:$PATH"
+export PATH="$HOME/Android/Sdk/platform-tools:$PATH"
 export PATH="/usr/local/cuda/bin:$PATH"
 export PATH="$GOBIN:$PATH"
 
