@@ -15,6 +15,7 @@ export GOPATH="$HOME/go"
 export GOBIN="$GOPATH/bin"
 export NVIDIA_CONTAINER_TOOLKIT_VERSION=1.18.2-1
 export ANDROID_HOME="$HOME/Android/Sdk"
+export OPENSSL_DIR="/home/linuxbrew/.linuxbrew/etc/openssl@3"
 
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
@@ -26,6 +27,7 @@ export PATH="$HOME/android-studio/bin:$PATH"
 export PATH="$HOME/Android/Sdk/platform-tools:$PATH"
 export PATH="/usr/local/cuda/bin:$PATH"
 export PATH="$GOBIN:$PATH"
-
+export PATH="$HOME/.juliaup/bin:$PATH"
+export PATH="$HOME/zig/zig:$PATH"
 
 export NVM_DIR="$HOME/.config/nvm"
