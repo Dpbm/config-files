@@ -209,7 +209,8 @@ mode "apps" {
 bindsym $mod+Shift+d mode "dev"
 
 mode "dev" {
-	bindsym a exec bash -c "$HOME/android-studio/bin/studio.sh"
+    bindsym a exec bash -c "$HOME/android-studio/bin/studio.sh"
+    bindsym p exec pycharm
 
         bindsym Return mode "default"
         bindsym Escape mode "default"
@@ -221,7 +222,7 @@ bindsym $mod+plus exec bash -c "source $HOME/.functions/pulse.sh && volume_up"
 bindsym $mod+minus exec bash -c "source $HOME/.functions/pulse.sh && volume_down"
 
 # Print Screen
-bindsym Print exec scrot -s -F "$HOME/Pictures/ScreenShots/$(date).png"
+bindsym Shift+Prior exec scrot -s -F "$HOME/Pictures/ScreenShots/$(date).png"
 
 # Change keyboard layout
 bindsym $mod+ctrl+space exec bash -c "source $HOME/.functions/keys.sh && switch_layout"

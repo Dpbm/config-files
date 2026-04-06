@@ -37,3 +37,10 @@ else
     fi
 fi
 unset __conda_setup
+
+# bun completions
+[ -s "/home/alexandre/.bun/_bun" ] && source "/home/alexandre/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

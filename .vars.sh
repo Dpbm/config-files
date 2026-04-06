@@ -29,5 +29,13 @@ export PATH="/usr/local/cuda/bin:$PATH"
 export PATH="$GOBIN:$PATH"
 export PATH="$HOME/.juliaup/bin:$PATH"
 export PATH="$HOME/zig/zig:$PATH"
+export PATH="$HOME/jetbrains-toolbox/bin:$PATH"
+export PATH="$HOME/.bun/bin:$PATH"
+
+BASE_TOOLBOX_PATH="$HOME/.local/share/JetBrains/Toolbox/apps"
+
+for folder in $BASE_TOOLBOX_PATH/**; do
+  export PATH="$folder/bin:$PATH"
+done
 
 export NVM_DIR="$HOME/.config/nvm"

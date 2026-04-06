@@ -10,3 +10,9 @@ alias burp="$HOME/burp-suite/BurpSuiteCommunity"
 alias reboot="sudo reboot"
 alias shutdown="sudo shutdown now"
 alias pom="pomodoro -focus=30m -relax=10m"
+alias uuid="cat /proc/sys/kernel/random/uuid"
+
+# git
+alias gc="git commit -m ${@}"
+alias ga="git add ."
+alias gp="git push origin main"
