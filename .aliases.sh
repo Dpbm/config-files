@@ -17,3 +17,6 @@ alias gc="git commit -m ${@}"
 alias ga="git add ."
 alias gp="git push origin main"
 alias gts="git status"
+
+# typos
+alias dc="cd ${@}"

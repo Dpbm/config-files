@@ -227,6 +227,9 @@ bindsym Shift+Prior exec scrot -s -F "$HOME/Pictures/ScreenShots/$(date).png"
 # Change keyboard layout
 bindsym $mod+ctrl+space exec bash -c "source $HOME/.functions/keys.sh && switch_layout"
 
+# lock screen
+bindsym $mod+Escape exec i3lock
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
