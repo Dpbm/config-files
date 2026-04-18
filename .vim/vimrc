@@ -9,3 +9,18 @@ set shiftwidth=4   " Number of spaces for auto-indenting
 set softtabstop=4  " Number of spaces a tab counts for when editing
 set expandtab      " Convert tabs to spaces
 
+" For file explorer
+set nocp
+filetype plugin on
+
+nnoremap <C-e> :NERDTree<CR>
+nnoremap <C-q> :NERDTreeToggle<CR>
+
+call plug#begin()
+
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plug 'junegunn/fzf.vim'
+
+    Plug 'preservim/nerdtree'
+
+call plug#end()

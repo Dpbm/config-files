@@ -32,6 +32,10 @@ export PATH="$HOME/zig/zig:$PATH"
 export PATH="$HOME/jetbrains-toolbox/bin:$PATH"
 export PATH="$HOME/.bun/bin:$PATH"
 
+# Fzf use ripgrep
+export FZF_DEFAULT_COMMAND='rg --files'
+export FZF_DEFAULT_OPTS='-m'
+
 BASE_TOOLBOX_PATH="$HOME/.local/share/JetBrains/Toolbox/apps"
 
 for folder in $BASE_TOOLBOX_PATH/**; do
