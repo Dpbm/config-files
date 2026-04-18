@@ -32,6 +32,6 @@ copy_file_to() {
   fi
 }
 
-from_home=(".xinitrc" ".zprofile" ".zshrc" ".bashrc" ".functions/" ".aliases.sh" ".vars.sh")
+from_home=(".xinitrc" ".zprofile" ".zshrc" ".bashrc" ".functions/" ".aliases.sh" ".vars.sh" ".vim")
 from_home_config=("i3/" "i3blocks/" "dunst" "fontconfig" "nvim/init.lua")
 from_etc=("hosts")

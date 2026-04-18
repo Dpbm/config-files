@@ -1,0 +1,11 @@
+set hidden " Don't ask to save for every window, tab, buffer, etc.
+
+syntax on " Syntax Highlight
+
+set number " Line Numbers
+
+set tabstop=4      " Number of visual spaces a tab counts for
+set shiftwidth=4   " Number of spaces for auto-indenting
+set softtabstop=4  " Number of spaces a tab counts for when editing
+set expandtab      " Convert tabs to spaces
+
