@@ -16,6 +16,9 @@ export GOBIN="$GOPATH/bin"
 export NVIDIA_CONTAINER_TOOLKIT_VERSION=1.18.2-1
 export ANDROID_HOME="$HOME/Android/Sdk"
 export OPENSSL_DIR="/home/linuxbrew/.linuxbrew/etc/openssl@3"
+export NVM_DIR="$HOME/.config/nvm"
+export PNPM_HOME="$HOME/.local/share/pnpm"
+export BUN_INSTALL="$HOME/.bun"
 
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
@@ -31,6 +34,8 @@ export PATH="$HOME/.juliaup/bin:$PATH"
 export PATH="$HOME/zig/zig:$PATH"
 export PATH="$HOME/jetbrains-toolbox/bin:$PATH"
 export PATH="$HOME/.bun/bin:$PATH"
+export PATH="$BUN_INSTALL/bin:$PATH"
+export PATH="$HOME/.pixi/bin:$PATH"
 
 # Fzf use ripgrep
 export FZF_DEFAULT_COMMAND='rg --files'
@@ -42,4 +47,3 @@ for folder in $BASE_TOOLBOX_PATH/**; do
   export PATH="$folder/bin:$PATH"
 done
 
-export NVM_DIR="$HOME/.config/nvm"

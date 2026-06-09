@@ -1,5 +1,6 @@
 set hidden " Don't ask to save for every window, tab, buffer, etc.
 
+filetype plugin indent on
 syntax on " Syntax Highlight
 
 set number " Line Numbers
@@ -22,5 +23,7 @@ call plug#begin()
     Plug 'junegunn/fzf.vim'
 
     Plug 'preservim/nerdtree'
+
+    Plug 'tpope/vim-commentary'
 
 call plug#end()

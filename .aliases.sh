@@ -11,6 +11,7 @@ alias reboot="sudo reboot"
 alias shutdown="sudo shutdown now"
 alias pom="pomodoro -focus=30m -relax=10m"
 alias uuid="cat /proc/sys/kernel/random/uuid"
+alias vi="vim ${@}"
 
 # git
 alias gc="git commit -m ${@}"

@@ -1,6 +1,12 @@
+eval "$(starship init zsh)"
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
+
 source "$HOME/.vars.sh"
 source "$HOME/.aliases.sh"
 source "$HOME/.secrets.sh"
+source "$HOME/.cargo/env"
+source "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
+source "$HOME/.zsh-plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
 BASE_FUNCTIONS_PATH="$HOME/.functions"
 for function_file in $BASE_FUNCTIONS_PATH/*.sh; do
@@ -8,23 +14,17 @@ for function_file in $BASE_FUNCTIONS_PATH/*.sh; do
     source "$function_file"
 done
 
-. "$HOME/.cargo/env"
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
 
-export NVM_DIR="$HOME/.config/nvm"
+setopt autocd
+setopt appendhistory
+setopt share_history
+
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# pnpm
-export PNPM_HOME="$HOME/.local/share/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-# pnpm end
-#
-eval "$(starship init zsh)"
-
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 
 __conda_setup="$('$HOME/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
@@ -38,9 +38,4 @@ else
 fi
 unset __conda_setup
 
-# bun completions
-[ -s "/home/alexandre/.bun/_bun" ] && source "/home/alexandre/.bun/_bun"
 
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
