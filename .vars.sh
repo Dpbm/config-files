@@ -1,6 +1,7 @@
 #!/bin/bash
 
 export LANG=en_US.UTF-8
+export LICENSE_USER="Alexandre Silva <dpbm136@gmail.com>"
 
 export XDG_DATA_DIRS="/var/lib/flatpak/exports/share:$XDG_DATA_DIRS"
 export XDG_DATA_DIRS="$HOME/.local/share/flatpak/exports/share:$XDG_DATA_DIRS"
